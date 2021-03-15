@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".data.AddFragment">
+
+    <TextView
+        android:id="@+id/animal_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/add_an_animal"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="@string/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="530dp" />
+    <EditText
+        android:id="@+id/name"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="480dp"
+        android:hint="@string/dona"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="450dp"
+        android:text="@string/gender" />
+    <EditText
+        android:id="@+id/gender"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="400dp"
+        android:hint="@string/female"/>
+
+    <TextView
+        android:text="@string/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="370dp" />
+    <EditText
+        android:id="@+id/age"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="320dp"
+        android:hint="@string/_7"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="293dp"
+        android:text="@string/breed" />
+    <EditText
+        android:id="@+id/breed"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="240dp"
+        android:hint="@string/husky"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="206dp"
+        android:text="@string/favorite_food" />
+    <EditText
+        android:id="@+id/food"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="160dp"
+        android:hint="@string/chicken"/>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:text="@string/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
