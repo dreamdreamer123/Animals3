@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         tabLayout = findViewById(R.id.tabLayout)
         viewPager = findViewById(R.id.view_pager)
-        initializeUi()
+        //initializeUi()
 
         val adapter = MyAdapter(supportFragmentManager, tabLayout.tabCount)
 
