@@ -1,13 +1,11 @@
 package com.example.animals.viewModel
 
-data class Animal(
+import java.io.Serializable
+
+class Animal constructor(
     val name: String,
-    val age: String,
+    val age: Int,
     val gender: String,
     val breed: String,
     val favouriteFood: String
-) {
-    override fun toString(): String {
-        return "$name, $gender, $age, $breed, $favouriteFood"
-    }
-}
+) : Serializable

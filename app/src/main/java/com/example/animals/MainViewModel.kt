@@ -1,13 +1,20 @@
 package com.example.animals
 
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.animals.viewModel.Animal
-import com.example.animals.viewModel.AnimalRepository
 
-class MainViewModel(private val animalRepository: AnimalRepository) : ViewModel() {
+class MainViewModel() : ViewModel() {
 
-    fun getAnimals() = animalRepository.getAnimal()
+    val animalList = MutableLiveData<ArrayList<Animal>>()
 
-    fun addAnimals(animal: Animal) = animalRepository.addAnimal(animal)
+    init {
+        animalList.value = arrayListOf(
+            Animal("Dona", 7, "Female", "Husky", "checken")
+        )
+    }
 
+    fun addAnimal(animal: Animal) {
+        animalList.value?.add(animal)
+    }
 }
