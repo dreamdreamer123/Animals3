@@ -28,7 +28,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="480dp"
         android:hint="@string/dona"
-        />
+        android:autofillHints="@string/dona" />
 
 
     <TextView
@@ -45,7 +45,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="400dp"
-        android:hint="@string/female"/>
+        android:hint="@string/female"
+        android:autofillHints="@string/female" />
 
     <TextView
         android:text="@string/age"
@@ -61,7 +62,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="320dp"
-        android:hint="@string/_7"/>
+        android:hint="@string/_7"
+        android:autofillHints="@string/_7" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -77,7 +79,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="240dp"
-        android:hint="@string/husky"/>
+        android:hint="@string/husky"
+        android:autofillHints="@string/husky" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -93,7 +96,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="160dp"
-        android:hint="@string/chicken"/>
+        android:hint="@string/chicken"
+        android:autofillHints="@string/chicken" />
 
     <Button
         android:id="@+id/buttonAdd"

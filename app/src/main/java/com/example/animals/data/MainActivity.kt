@@ -1,25 +1,22 @@
 package com.example.animals.data
 
-import MyAdapter
-
-import androidx.appcompat.app.AppCompatActivity
+import com.example.animals.MyAdapter
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import androidx.lifecycle.Observer
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import androidx.viewpager.widget.ViewPager
-import com.example.animals.util.InjectorUtils
 import com.example.animals.MainViewModel
 import com.example.animals.R
+import com.example.animals.util.InjectorUtils
 import com.example.animals.viewModel.Animal
 import com.google.android.material.tabs.TabLayout
-import java.lang.StringBuilder
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var tabLayout: TabLayout
+    private lateinit var tabLayout: TabLayout
     lateinit var viewPager: ViewPager
 
 
@@ -32,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         viewPager = findViewById(R.id.view_pager)
         initializeUi()
 
-        val adapter = MyAdapter(this, supportFragmentManager, tabLayout.tabCount)
+        val adapter = MyAdapter(supportFragmentManager, tabLayout.tabCount)
 
         viewPager.adapter = adapter
         viewPager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabLayout))

@@ -1,24 +1,25 @@
-import android.content.Context
+package com.example.animals
+
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.example.animals.data.AddFragment
 import com.example.animals.data.AnimalsFragment
 
-class MyAdapter(private val myContext: Context, fm: FragmentManager, internal var totalTabs: Int) :
-    FragmentPagerAdapter(fm) {
+class MyAdapter(fm: FragmentManager, private var totalTabs: Int) :
+     FragmentPagerAdapter(fm){
 
     // this is for fragment tabs
     override fun getItem(position: Int): Fragment {
-        when (position) {
+        return when (position) {
             0 -> {
                 //  val homeFragment: HomeFragment = HomeFragment()
-                return AddFragment()
+                AddFragment()
             }
             1 -> {
-                return AnimalsFragment()
+                AnimalsFragment()
             }
-            else -> return getItem(position)
+            else -> getItem(position)
         }
     }
 
