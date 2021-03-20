@@ -24,7 +24,7 @@ class AnimalsFragment : Fragment() {
     ): View? {
         val root = inflater.inflate(R.layout.fragment_animals, container, false)
         val linearLayout = root.findViewById<LinearLayout>(R.id.contact_container)
-        viewModel.animalList.observe(viewLifecycleOwner, {
+        viewModel.animalList.observe(viewLifecycleOwner, Observer {
             linearLayout.removeAllViews()
             for (animal in it) {
                 val row = inflater.inflate(R.layout.animal_row, linearLayout, false)
