@@ -7,5 +7,7 @@ class Animal constructor(
     val age: Int,
     val gender: String,
     val breed: String,
-    val favouriteFood: String
+    val favouriteFood: String,
+    val habitat: String,
+    val movement: String
 ) : Serializable
