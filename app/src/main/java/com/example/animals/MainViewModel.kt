@@ -10,7 +10,7 @@ class MainViewModel() : ViewModel() {
 
     init {
         animalList.value = arrayListOf(
-            Animal("Dona", 7, "Female", "Husky", "checken")
+            Animal("Dona", 7, "Female", "Husky", "chicken", "Backyard", "FLY")
         )
     }
 

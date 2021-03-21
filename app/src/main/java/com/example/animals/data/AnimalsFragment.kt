@@ -36,5 +36,5 @@ class AnimalsFragment : Fragment() {
         return root
     }
 
-    fun Animal.getDetails() = "$name, $gender, $age, $breed, $favouriteFood"
+    fun Animal.getDetails() = "$name, $gender, $age, $breed, $favouriteFood, $habitat, $movement"
 }
